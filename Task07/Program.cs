@@ -14,7 +14,3 @@ if (number > 100 || number < 999)
 number = (number % 10);
 System.Console.WriteLine(number);
 }
-else
-{
-System.Console.WriteLine("Число не является 3х значным");
-}
