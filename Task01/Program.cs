@@ -7,9 +7,11 @@ a = 9; b = -3 -> да
 a = -3 b = 9 -> нет
 */
 
-System.Console.WriteLine("Введи числа: ");
+System.Console.WriteLine("Введи 1ое число: ");
 
 int number1 = Convert.ToInt32(Console.ReadLine ());
+
+System.Console.WriteLine("Введи 2ое число: ");
 int number2 = Convert.ToInt32(Console.ReadLine ());
 
 if (number1 == number2 * number2)
