@@ -5,3 +5,8 @@
 782 -> 2
 918 -> 8
 */
+
+System.Console.WriteLine("Enter number: ");
+int number = Convert.ToInt32(Console.ReadLine ());
+number = (number % 10);
+System.Console.WriteLine(number);
