@@ -23,9 +23,9 @@ void PrintArray(int[] array)
     System.Console.WriteLine("]");
 }
 
-int[] CopyArr (int[] arr, int size)
+int[] CopyArr (int[] arr)
 {
-    int[] copyArr = new int[size];
+    int[] copyArr = new int[arr.Length];
     for (int i = 0; i < arr.Length; i++)
     {
         copyArr[i] = arr[i];
@@ -36,6 +36,6 @@ int[] CopyArr (int[] arr, int size)
 int size = new Random().Next(0, 10);
 int[] userArr = MakeArr(size);
 PrintArray(userArr);
-int[] copyUserArr = CopyArr(userArr, size);
+int[] copyUserArr = CopyArr(userArr);
 System.Console.WriteLine();
 PrintArray(copyUserArr);
