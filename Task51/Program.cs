@@ -27,7 +27,7 @@ void Print2DArray (int[,] arr)
     }
 }
 
-int[,] Search (int[,] arr)
+int Search (int[,] arr)
 {
     int result = 0;
     for (int i = 0; i < arr.GetLength(0); i++)
@@ -37,20 +37,9 @@ int[,] Search (int[,] arr)
     return result; // просит преобразовать из int в int[*, *]
 }
 
-void Print2DArray2 (int[,] arr)
-{
-    for (int i = 0; i < arr.GetLength(0); i++)
-    {
-        for (int j = 0; j < arr.GetLength(1); j++)
-        {
-            System.Console.Write(arr[i, j] + "\t");
-        }
-        System.Console.WriteLine();
-    }
-}
 
 int[,] user2DArray = Get2DArray (5, 9);
 Print2DArray(user2DArray);
-int[,] ua2 = Search(user2DArray);
 System.Console.WriteLine();
-Print2DArray2(ua2);
+int diogonal = Search(user2DArray);
+System.Console.WriteLine(diogonal);
